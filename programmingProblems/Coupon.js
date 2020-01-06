@@ -1,4 +1,4 @@
-var readLinesync=require('readline-sync');
+let readLinesync=require('readline-sync');
 let inputCoupons=readLinesync.question("Enter the number of Coupons to generate ");
 let SecuredCoupons=[]
 let numberTypeCoupons=[]
@@ -17,13 +17,13 @@ let couponGenerator=(inputCoupons) =>{
 } 
 couponGenerator(inputCoupons);
 let wishinput=readLinesync.question("Hello Admin!!! Select Option 1 Or 2 \n 1)Do you want to generate Secured Coupons\n 2)Do you want to generate NumberWise Coupons\n")
-SecuredCoupons.forEach(function(entryvalue) {
+SecuredCoupons.forEach((entryvalue)=> {
     if(wishinput==1)
     console.log("Coupons Numbers genrated are ",entryvalue);
 })
-numberTypeCoupons.forEach(function(entryvalue) {
+numberTypeCoupons.forEach((entryvalue) =>{
     if(wishinput==2)
     console.log("Coupons generated are ",entryvalue)
 })
-var seccou=SecuredCoupons.map(i=>i+Math.round(2.095*2.5));
+let seccou=SecuredCoupons.map(i=>i+Math.round(2.095*2.5));
 console.log("coupons are ",seccou)

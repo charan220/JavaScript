@@ -1,4 +1,4 @@
-var readLinesync=require('readline-sync')
+let readLinesync=require('readline-sync')
 let value=readLinesync.question("Enter the value");
 let inc=1.00;
 function harmonic(value) {

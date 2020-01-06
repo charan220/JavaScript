@@ -1,5 +1,5 @@
 let arr=[1,2,5,4,6,7]
-let x=5;
+let x=8;
 let binarySearch=function (arr,param,startindex,endindex) {
     if(startindex   > endindex) return false
         let midindex=Math.floor((startindex+endindex)/2)
