@@ -28,9 +28,10 @@ console.log(me);    //takes latest value of variable and prints output as raavi
 //var is a function scoped variable  example below.
 var x=3;
 function func(params) {
+    //var x=3;
     if(params){
-       var x= Math.random();
-        return x;
+       var y= Math.random();
+        return y;
     }
     return x;
 }

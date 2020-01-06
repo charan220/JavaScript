@@ -1,4 +1,4 @@
-var object={
+let object={
     name:"charan",
     arrowGetName:()=>this.name,
     arrowgetThis:()=>this,
