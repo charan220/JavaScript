@@ -1,9 +1,11 @@
-var readLinesync=require('readline-sync')
-let stake=readLinesync.question("Enter the stake value");
-let goal=readLinesync.question("Enter the goal value");
-let totalnumberoftimes=readLinesync.question("Enter the number of times want to play");
-let bets=0,wins=0;
-function gambler(stake,goal,totalnumberoftimes) {
+/**
+ * @module - it will check for the two string are anagram or not
+ * @param {String} stake - stake amount
+ * @param {String} goal - goal amount
+ * @param {String} totalnumberoftimes -total times to play.
+ */
+let bets=0,wins=0;winper=0;
+exports.gambler=(stake,goal,totalnumberoftimes)=> {
     for(i=0;i<totalnumberoftimes;i++){
         let amount=stake;
         while(amount>0 && amount<goal){
@@ -16,10 +18,11 @@ function gambler(stake,goal,totalnumberoftimes) {
         if(amount==goal) {
             wins++;
         }     
-    }  
+    } 
+    winper=100*wins/totalnumberoftimes; 
 }
-gambler(stake,goal,totalnumberoftimes);
+
 console.log("Total Wins are ",wins);
-let winper=100*wins/totalnumberoftimes;
+
 console.log(`percentage of wins are :${winper} %`);
 console.log(`percentage of loss are :${100-winper} %`)

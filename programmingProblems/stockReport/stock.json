@@ -1,0 +1,21 @@
+[{
+    "name":"bridgelabz",
+    "numberofshares":40,
+    "shareCost":10000
+
+},
+{
+    "name":"IBM",
+    "numberofshares":20,
+    "shareCost":4500
+},
+{
+    "name":"Capgemini",
+    "numberofshares":50,
+    "shareCost":5000
+},
+{
+    "name":"GILCUS",
+    "numberofshares":10,
+    "shareCost":5000
+}]

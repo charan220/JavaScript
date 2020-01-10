@@ -1,8 +1,11 @@
+/**
+ * @module - it will prints the coupons numbers
+ * @param {String} inputCoupons - value to be checked
+ */
 let readLinesync=require('readline-sync');
-let inputCoupons=readLinesync.question("Enter the number of Coupons to generate ");
-let SecuredCoupons=[]
-let numberTypeCoupons=[]
-let couponGenerator=(inputCoupons) =>{
+let SecuredCoupons=[];
+let numberTypeCoupons=[];
+exports.couponGenerator=(inputCoupons) =>{
     if(inputCoupons<0){
         console.log("INPUT MISMATCH PLEASE ENSURE INPUT IS CORRECT");
     }else
@@ -15,15 +18,14 @@ let couponGenerator=(inputCoupons) =>{
     }
 }  
 } 
-couponGenerator(inputCoupons);
 let wishinput=readLinesync.question("Hello Admin!!! Select Option 1 Or 2 \n 1)Do you want to generate Secured Coupons\n 2)Do you want to generate NumberWise Coupons\n")
-SecuredCoupons.forEach((entryvalue)=> {
+(SecuredCoupons.forEach((entryvalue)=> {
     if(wishinput==1)
     console.log("Coupons Numbers genrated are ",entryvalue);
-})
+}),
 numberTypeCoupons.forEach((entryvalue) =>{
     if(wishinput==2)
     console.log("Coupons generated are ",entryvalue)
-})
+}))();
 let seccou=SecuredCoupons.map(i=>i+Math.round(2.095*2.5));
 console.log("coupons are ",seccou)

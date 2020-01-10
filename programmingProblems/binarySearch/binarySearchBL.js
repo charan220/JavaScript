@@ -1,5 +1,12 @@
+/**
+ * @module - it will check for the two string are anagram or not
+ * @param {String} x - string to be checked 
+ * @param {array} arr - array contains elements.
+ */
+let readLinesync=require('readline-sync');
+let x=readLinesync.question("ENter the element you want to search ?");
 let arr=[1,2,5,4,6,7]
-let x=8;
+
 let binarySearch=function (arr,param,startindex,endindex) {
     if(startindex   > endindex) return false
         let midindex=Math.floor((startindex+endindex)/2)
@@ -12,6 +19,7 @@ let binarySearch=function (arr,param,startindex,endindex) {
     
 }
 if(binarySearch(arr,x,0,arr.length-1)){
-console.log("Element Found ")
-}
-else console.log("ELement not Found");
+    console.log("Element Found ")
+    }
+    else console.log("ELement not Found");
+    

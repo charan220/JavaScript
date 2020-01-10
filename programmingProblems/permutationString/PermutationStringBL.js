@@ -1,7 +1,6 @@
-let readLinesync=require('readline-sync')
-let stringinput=readLinesync.question("Enter the string ")
+
 let permutations=[];
-function permut(string) {
+ exports.permute=(string)=> {
     if (string.length < 2) return string; 
     
     for (let i = 0; i < string.length; i++) {
@@ -11,13 +10,13 @@ function permut(string) {
         continue; 
       let remainingString = string.slice(0, i) + string.slice(i + 1, string.length); 
   
-      for (let subPermutation of permut(remainingString))
+      for (let subPermutation of this.permute(remainingString))
         permutations.push(char + subPermutation)
     }
     return permutations;
    
   }
-  permut(stringinput)
+  
   permutations.forEach(function (entrypoint) {
     console.log(" vaues are",entrypoint)
 })

@@ -1,3 +1,7 @@
+/**
+ * @module - it will check for the two string are anagram or not
+ * @param {Array} unsortedarray - string to be checked 
+ */
 let unsortedarray=[11,42,9,4,1,25];
 let mergeSort=(unsortedarray)=>{
     if(unsortedarray.length>=1){

@@ -1,9 +1,11 @@
-let readLinesync=require('readline-sync');
-let string1=readLinesync.question("Enter the first string for anagram");
-let string2=readLinesync.question("ENter the second string for anagram");
+/**
+ * @module - it will check for the two string are anagram or not
+ * @param {String} string1 - string to be checked 
+ * @param {String} string2 - string to be checked 
+ */
 let chararr=[];
 let stringarr=[];
-function anagramOrNot(string1,string2) {
+exports.anagramOrNot=(string1,string2)=> {
     if(string1.length==string2.length){
         chararr=string1.split("");  //(or) chararr=string1.split("").sort();
         chararr.sort();
@@ -19,4 +21,4 @@ function anagramOrNot(string1,string2) {
         console.log("not An anagram");
     }
 }
-anagramOrNot(string1,string2);
+
