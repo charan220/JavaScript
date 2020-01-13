@@ -1,5 +1,5 @@
 let value1="from value1";
-var value2="from value2";
+let value2="from value2";
 console.log(value1);    
 console.log(value2)
 
@@ -28,9 +28,10 @@ console.log(me);    //takes latest value of variable and prints output as raavi
 //var is a function scoped variable  example below.
 var x=3;
 function func(params) {
+    var x=3;
     if(params){
-       var x= Math.random();
-        return x;
+       var y= Math.random();
+        return y;
     }
     return x;
 }
@@ -40,11 +41,13 @@ console.log(func(false));
 
 let y=5;
 function func1(params){
+   let x=6;
+   myfunc();
 if(params){
     let x=Math.random();
     return x;
 }
-return y+1;
+return x+1;
 }
 
 console.log(func1(false));

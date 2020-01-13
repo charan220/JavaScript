@@ -1,4 +1,18 @@
-let obj=function () {
+/******************************************************************************
+ *  Execution       :   1. default node         cmd> node functionChaining.js
+ *                      2. if nodemon installed cmd> nodemon functionChaining.js
+ *
+ *  Purpose         : Function Chaining .
+ *
+ *  @description    : To implement the fnction chaining in the  using Es6
+ *  @file           : functionChaining.js
+ *  @overview       : chaining the methods using this keyword. 
+ *  @module         : module_name - This is optional if expeclictly its an npm or local package
+ *  @author         : Raavi Ramcharan<raavicharan33@gmail.com>
+ *  @version        : 1.0
+ *  @since          : 03-01-2020
+ ******************************************************************************/
+exports.obj=function () {
     let i=0;
     let add=function (j) {
         i+=j;
@@ -14,5 +28,4 @@ let obj=function () {
     }
     return {add:add,subtract:subtract,print:print}
 }
-let myFunc=obj();
-console.log(myFunc.add(3).subtract(1).print());
+

@@ -5,7 +5,6 @@
  *  Purpose         : Function Chaining .
  *
  *  @description    : To implement the fnction chaining in the  using Es6
- *
  *  @file           : functionChaining.js
  *  @overview       : chaining the methods using this keyword. 
  *  @module         : module_name - This is optional if expeclictly its an npm or local package

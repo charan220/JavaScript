@@ -10,7 +10,6 @@ var arr=["ram","charan","raavi"]
 var spreadarr=[...arr,"family"]; //we can add multiple arrays as well like =[...arr,...arr1,............]
 console.log("spreadarray is-->",spreadarr);
 
-
 //spread + Object literals.
 var {x,y,...z}={x:1,y:2,a:1,b:3}
 console.log(x);
